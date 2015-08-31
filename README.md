@@ -8,7 +8,7 @@
     * Add middleware document.
 
 ## Install
-1. Install nginx（apache）、mysql、php5;
+1. Install nginx(apache)、mysql、php5;
 2. Install composer [https://getcomposer.org/download/](https://getcomposer.org/download/);
 3. Clone the repository into your workspace;
 4. Install dependence: `composer install`;
@@ -231,7 +231,7 @@ function auth(){
     $app = \Max\App::getInstance();
     
     if($app->request->isGet()){
-        echo '当前为get请求'；
+        echo 'get request'；
     }
     // get response of slim: $app->response;
     $userModel = new \Models\User();
@@ -243,7 +243,7 @@ function auth(){
 
 
 
-## Dependence
+## Requirements
 * slim/slim: "2.6.2",
 * slim/extras: "2.0.3",
 * slim/views: "0.1.3",
