@@ -1,4 +1,4 @@
-# Max(base on slim)
+# Max(base on Slim Framework)
 
 * [slim](http://docs.slimframework.com/)
 
