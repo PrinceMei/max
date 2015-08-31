@@ -1,0 +1,32 @@
+{
+    "/": "Home:index",
+    "/hello/:name": {
+        "middleware": "auth",
+        "action": "Home:index"
+    },
+    "/test": {
+        "middleware": "auth",
+        "action": {
+            "get": "Home:index",
+            "post": "Home:index"
+        }
+    },
+    "/xx": {
+        "get": "Home:index",
+        "post": {
+            "middleware": [
+                "auth"
+            ],
+            "action": "Home:index"
+        }
+    },
+    "/admin": {
+        "/name": "Home:index",
+        "/title": {
+            "middleware": [
+                "auth"
+            ],
+            "action": "Home:index"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "app": {
+        "debug": true,
+        "cookies.lifetime": "1 days",
+        "cookies.httponly": true,
+        "cookies.secret_key": "CDD4DEBDAD28A6A7043B84D4737BFF2B"
+    },
+    "mysql": {
+        "host": "127.0.0.1",
+        "port": 3306,
+        "dbname": "testdb",
+        "user": "root",
+        "password": "root"
+    }
+}
